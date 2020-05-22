@@ -64,7 +64,7 @@ sudo python jasoos.py
 
 ### Setting up the environment (Windows Operating System)
 
-Step 1 - Downloading ReconSpider on your windows system.
+Step 1 - Downloading Jasoos on your windows system.
 
 In order to download Jasoos from github repository simply copy and paste this URL in your favourite browser.
 ```
