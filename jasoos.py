@@ -126,7 +126,7 @@ def obtenerInformacionIP(ip: str, url: str):
 
 
 print("+--------------------------------------+")
-ip = (input("Enter to IP >> ")).lower()
+ip = (input("Enter to IP >> ")).upper()
 print("+--------------------------------------+")
 if (not is_valid_ip(ip)):
     print("Insert to IPv4 or IPv6")
@@ -138,19 +138,19 @@ else:
         print('Could not communicate with APIs')
     else:
         print("------------Scanning------------")
-        print("")
-        print("")
+        print("\n")
+        print("\n")
         print('AS => {0}'.format(datoJSONAPI3['as']))
         print('ISP => {0}'.format(datoJSONAPI3['isp']))
         print('Organization => {0}'.format(datoJSONAPI3['org']))
         print('Continent => {0} [{1}]'.format(datoJSONAPI2['continentName'], datoJSONAPI2['continentCode']))
         print('Country => {0} [{1}/{2}]'.format(datoJSONAPI1['countryName'], datoJSONAPI1['countryCode'], datoJSONAPI1['countryCode3']))
-        print('Región => {0} [{1}]'.format(datoJSONAPI3['regionName'], datoJSONAPI3['region']))
+        print('Region => {0} [{1}]'.format(datoJSONAPI3['regionName'], datoJSONAPI3['region']))
         print('City => {0}'.format(datoJSONAPI3['city']))
         print('Postal Code => {0}'.format(datoJSONAPI3['zip']))
         print('Coordinates => {0},{1}'.format(datoJSONAPI3['lat'], datoJSONAPI3['lon']))
         print('Time zone => {0}'.format(datoJSONAPI3['timezone']))
         print('Emoji => {0}'.format(datoJSONAPI1['countryEmoji']))
-print("")
+print("\n")
 print("----------Scanning Complete----------")
 #Leave
